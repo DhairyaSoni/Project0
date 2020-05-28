@@ -57,6 +57,11 @@
                   float:right;
                   font-weight: bold;
                 }
+                #content>.ul{
+                  display: grid;
+                  grid-template-columns: auto auto;
+                  column-gap: 5px;
+                }
             }
         </style>
     </head>
@@ -88,26 +93,23 @@
           <div id="coverDiv"></div>
           <div><p class="h1">Experience</p></div>
           <div id="content">
-            <ul>
-              <li>
-                <span class="h5">Web Developer</span> (ACT Computer Class), Ahmedabad, Guj.<span class="left">(Mar 2017 - Sep 2018)</span>
+            <div class="ul"><div id="row1">
+                <span class="h5">Web Developer</span> (ACT Computer Class), Ahmedabad, Guj.<span class="left">(Mar 2017 - Sep 2018)</span><br><br>
                 <ul>
                   <li>Worked with senior developer to manage large, complex designed projects for corporate clients</li>
                   <li>Develop project concepts and maintain optimal workflow</li>
                   <li>Completed detailed programming and development tasks for front end internal websites as well as challenging back-end server code</li>
                   <li>Collaborate with designers to create clean interfaces </li>
                   <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
-                </ul>
-              </li><br>
-              <li>
-                <span class="h5">Sandwich Artist</span> (Subway), Hamilton, ON.<span class=left>(Feb 2019 - Present)</span>
+                </ul><br></div>
+              <div id="row2">
+                <span class="h5">Sandwich Artist</span> (Subway), Hamilton, ON.<span class=left>(Feb 2019 - Present)</span><br><br>
                 <ul>
                   <li>Supporting other areas of the restaurant as necessary, such as setup, clean up, equipment maintenance</li>
                   <li>Consistently deliver exceptional customer service</li>
                   <li>Preparing food in accordance with Subway food safety laws and guidelines </li>
-                </ul>
-              </li>
-            </ul>
+                </ul><br></div>
+            </div>
           </div>
     </body>
 </html>
