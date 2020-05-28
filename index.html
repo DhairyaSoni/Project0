@@ -8,11 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/css.css">
     <style>
-        #iconimg{
-            border-radius: 100px;
-            width: 30px;
-        }
         .h3{
             padding:7px 15px;
         }
@@ -25,11 +22,11 @@
         .education:hover{
             color: rgb(32, 32, 32);
         }
-        body{
-            padding:0;
-        }
         #content{
             margin-bottom: 0px;
+        }
+        #coverDiv{
+            background-image: url("image/background.jpg");
         }
         @media only screen and (max-width:481px){
             .education small{
@@ -37,17 +34,9 @@
             }
         }
         @media only screen and (max-width:991px){
-            #Software{
-                display: none;
-            }
-            #iconimg{
-                display: none;
-            }
-            #coverDiv{
-                background-image: url("image/background.jpg");
-                height:15em;
-                background-size: cover;
-                filter: blur(5px);
+            #content{
+                position: relative;
+                top:-8em;
             }
             #myPic{
                 border-radius: 200px;
@@ -57,48 +46,23 @@
                 margin-right: auto;
                 display: block;
             }
-            #content{
-                background-color: rgba(240, 240, 240, 0.863);
-                border-radius: 15px;
-                margin-top: 0;
-                padding-top: 0;
-                position: relative;
-                top:-8em;
-            }
+            
         }
         @media only screen and (min-width:992px){
-            #content{
-                margin-top: 0;
-                padding-top: 0;
-                position: relative;
-                top:-12em;
-                margin-left: 15%;
-                margin-right: 15%;
-                background-color: rgba(240, 240, 240, 0.863);
-                border-radius: 15px;
-            }
-            #coverDiv{
-                height:20em;
-                background-image: url("image/background.jpg");
-                background-size: cover;
-                filter: blur(5px);
-            }
             #myPic{
                 border-radius: 100px;
                 position: relative;
                 bottom: 12em;
                 margin-left: 2em;
             }
-            #ds{
-                display: none;
-            }
+            
         }         
     </style>
     </head>
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand"><h3 class="text-secondary" id="ds">DS</h3><img src="image/icon.jpg" alt="Dhairya's Photo" id="iconimg"></span>
+            <a href="index.html"><span class="navbar-brand"><h3 class="text-secondary" id="ds">DS</h3><img src="image/icon.jpg" alt="Dhairya's Photo" id="iconimg"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -112,7 +76,7 @@
                   <a class="nav-link" href="Projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Education.html">Education</a>
+                    <a class="nav-link" href="Education.html">Qualification</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Experience.html">Experience</a>
@@ -133,32 +97,32 @@
                 <li>
                     <p class="h5">Tic Tac Toe</p>
                     <p class="text-secondary">
-                        This project has been made by using JAVA programming language <a href="#" id='readmore' class="text-secondary">...<small>(read more)</small></a>
+                        This project has been made by using JAVA programming language <a href="Projects.html    " id='readmore' class="text-secondary">...<small>(read more)</small></a>
                     </p>
                 </li>
                 <li>
                     <p class="h5">Simple bank web application</p>
                     <p class="text-secondary">
-                        For this project, I have used PHP for backend and JavaScript <a href="#" id='readmore' class="text-secondary">...<small>(read more)</small></a>
+                        For this project, I have used PHP for backend and JavaScript <a href="Projects.html" id='readmore' class="text-secondary">...<small>(read more)</small></a>
                     </p>
                 </li>
             </ul>
             <br>
             <br>
-            <p class="h3">Education</p>
+            <p class="h3">Qualification</p>
             <ul>
                 <li>
-                    <a href="#" class="education"><p class="h5">Mohawk College <small class="small">,Hamilton, ON. <span class="left">(Jan 2019 - Dec 2022)</span></small></p></a>
+                    <a href="Education.html" class="education"><p class="h5">Mohawk College <small class="small">,Hamilton, ON. <span class="left">(Jan 2019 - Dec 2022)</span></small></p></a>
                 </li>
             </ul>
             <br><br>
             <p class="h3">Experience</p>
             <ul>
                 <li>
-                    <a href="#" class="education"><p class="h5">Sandwich artist<small class="small">, Subway, Hamilton, ON. <span class="left">(Mar 2019 - Present)</span></small></p></a>
+                    <a href="Experience.html" class="education"><p class="h5">Sandwich artist<small class="small">, Subway, Hamilton, ON. <span class="left">(Mar 2019 - Present)</span></small></p></a>
                 </li>
                 <li>
-                    <a  href="#" class="education"><p class="h5">Web Developer<small class="small"> ,ACT Computer, Ahmedabed, ON. <span class="left">(Apr 2017 - Sep 2018)</span></small></p></a>
+                    <a  href="Experience.html" class="education"><p class="h5">Web Developer<small class="small"> ,ACT Computer, Ahmedabed, ON. <span class="left">(Apr 2017 - Sep 2018)</span></small></p></a>
                 </li>
             </ul>
             <br><br>

@@ -9,30 +9,55 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+        <link rel="stylesheet" href="CSS/css.css">
         <style>
-            #iconimg{
-                border-radius: 100px;
-                width: 30px;
+            #coverDiv{
+                background-image: url("image/Project_back.PNG");
             }
-            @media only screen and (max-width:991px ){
-                #Software{
-                    display: none;
-                }
-                #iconimg{
-                    display: none;
+            #content{
+                padding-top: 2em;
+            }
+            .bold{
+                font-weight: bold;
+            }
+            @media only screen and (max-width: 481px){
+                .h1{
+                    font-size: 5em;
+                    position: relative;
+                    top: -2.25em;
+                    text-shadow: 5px 5px rgb(63, 63, 63);
+                    text-align: center;
+                    font-style: italic;
+                    color:darkgrey;
                 }
             }
-            @media only screen and (min-width:992px){
-                #ds{
-                    display: none;
+            @media only screen and (min-width: 482px) and (max-width: 991px){
+                .h1{
+                    font-size: 7em;
+                    position: relative;
+                    top: -1.75em;
+                    text-shadow: 5px 5px rgb(63, 63, 63);
+                    text-align: center;
+                    font-style: italic;
+                    color:darkgrey;
+                }
+            }
+            @media only screen and (min-width: 992px){
+                .h1{
+                    font-size: 10em;
+                    position: relative;
+                    top: -1.75em;
+                    text-shadow: 5px 5px rgb(63, 63, 63);
+                    text-align: center;
+                    font-style: italic;
+                    color:darkgrey;
                 }
             }
         </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand"><h3 class="text-secondary" id="ds">DS</h3><img src="image/icon.jpg" alt="Dhairya's Photo" id="iconimg"></span>
+            <a href="index.html"><span class="navbar-brand"><h3 class="text-secondary" id="ds">DS</h3><img src="image/icon.jpg" alt="Dhairya's Photo" id="iconimg"></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,7 +71,7 @@
                   <a class="nav-link" href="Projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Education.html">Education</a>
+                    <a class="nav-link" href="Education.html">Qualification</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Experience.html">Experience</a>
@@ -55,8 +80,49 @@
             </div>
             
             <span class="navbar-brand" href="#" id='Software'>Software Developer</span>
-          </nav>
+        </nav>
 
-
+        <div id="coverDiv"></div>
+        <div id="heading"><p class="h1">Projects</p></div>
+        <div id="content" class="toast-body">
+            <ul>
+                <li>
+                    <p class="h4">Tic Tac Toe</p>
+                    <p class="text-secondary">
+                        This project has been made by using <span class="bold">JAVA</span> programming language.
+                        I have used <span class="bold">Graphycal User Interface (GUI)</span> for this project.
+                        This game needs 2 player. First of all they both have to add their name, 
+                        then there is a <span class="bold">START</span> button appear. And by clicking that button players can start 
+                        the game. Then, if a player wins in that game, the game board will be disappear and 
+                        there will be a <span class="bold">Contratulation</span> message with the winner <span class="bold">player's name</span>.
+                        <br><br>
+                        If no one wins, then the game will display the <span class="bold">sad emoji</span> &#128532; and will show the message to say
+                        <span class="bold">No one won this game</span>.
+                    </p>
+                </li><br><br><br>
+                <li>
+                    <p class="h4">Simple bank web application</p>
+                    <p class="text-secondary">
+                        This project is a small example of the bank website.
+                        For this project, I have used <span class="bold">HTML, CSS, JavaScript, JQuery</span> for the fornt end and <span class="bold">PHP</span> for back end.
+                        <span class="bold">SQL</span> is also playing majore role for this project.<br><br>
+                        When the user enter to this application, a <span class="bold">Log In</span> page appears. If the user is new then 
+                        there is also an option to create new account.
+                        He can create his account by clicking on <span class="bold">Create Account</span>, and he can enter his password
+                        and how much amount he like in his <span class="bold">Saving</span> and in his <span class="bold">Check In</span> account.
+                        He will get fix amount for the Credit Card. Moreover, he can not choose or change his 
+                        Account Number.<br><br>
+                        There is also an option on Log in page, if user forgot his password.
+                        If he clicks on that option, he will reach to the Forget Password page, which ask about his 
+                        Account Number. After entering the account number, his email will be apear and he will <span class="bold">get an
+                        email</span>, which has his <span class="bold">password</span> and also some more information like <span class="bold">time and date</span>, in the email body.
+                        <br><br>
+                        In this application, user can add the <span class="bold">Pay Check</span>, he even can use the amount of money from different 
+                        banking account. 
+                        </body>
+                    </p>
+                </li> 
+            </ul>
+        </div>
     </body>
 </html>
