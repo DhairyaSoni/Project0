@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dhairya's Projects</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="CSS/css.css">
+        <style>
+            #coverDiv{
+              background-image: url("image/Exp_back1.PNG");
+              filter: blur(10px);
+            }
+            .h1{
+              color: rgb(51, 51, 51);
+              position: relative;
+              /* text-shadow: 5px 5px rgb(104, 103, 103); */
+            }
+            #content{
+              margin-top: 4em;
+              padding: 2em 2em;
+            }
+            @media only screen and (max-width: 481px){
+              .h1{
+                    font-size: 3em;
+                    top: -4em;
+                    text-align: center;
+                    color: rgb(219, 219, 219);
+                    text-shadow: 3px 3px black;
+                }
+                #coverDiv{
+                  background-image: url("image/Exp_back2.PNG");
+                  filter: blur(15px);
+                } 
+            }
+            @media only screen and (min-width: 482px) and (max-width: 991px){
+              .h1{
+                    font-size: 8em;
+                    top: -1.75em;
+                    text-align: center;
+                }
+            }
+            @media only screen and (min-width: 992px){
+              .h1{
+                    font-size: 10em;
+                    top: -1.75em;
+                    text-align: center;
+                }
+                .small{
+                  float:right;
+                }
+                .left{
+                  float:right;
+                  font-weight: bold;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a href="index.html"><span class="navbar-brand"><h3 class="text-secondary" id="ds">DS</h3><img src="image/icon.jpg" alt="Dhairya's Photo" id="iconimg"></span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Education.html">Qualification</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Experience.html">Experience</a>
+                </li>
+              </ul>
+            </div>
+            <span class="navbar-brand" href="#" id='Software'>Software Developer</span>
+          </nav>
+          <div id="coverDiv"></div>
+          <div><p class="h1">Experience</p></div>
+          <div id="content">
+            <ul>
+              <li>
+                <span class="h5">Web Developer</span> (ACT Computer Class), Ahmedabad, Guj.<span class="left">(Mar 2017 - Sep 2018)</span>
+                <ul>
+                  <li>Worked with senior developer to manage large, complex designed projects for corporate clients</li>
+                  <li>Develop project concepts and maintain optimal workflow</li>
+                  <li>Completed detailed programming and development tasks for front end internal websites as well as challenging back-end server code</li>
+                  <li>Collaborate with designers to create clean interfaces </li>
+                  <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
+                </ul>
+              </li><br>
+              <li>
+                <span class="h5">Sandwich Artist</span> (Subway), Hamilton, ON.<span class=left>(Feb 2019 - Present)</span>
+                <ul>
+                  <li>Supporting other areas of the restaurant as necessary, such as setup, clean up, equipment maintenance</li>
+                  <li>Consistently deliver exceptional customer service</li>
+                  <li>Preparing food in accordance with Subway food safety laws and guidelines </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </body>
+</html>
