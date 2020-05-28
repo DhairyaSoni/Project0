@@ -2,31 +2,25 @@
     border-radius: 100px;
     width: 30px;
 }
-$for_filter: blur(5px);
-%for_content{
-    background-color: rgba(240, 240, 240, 0.863);
-    border-radius: 15px;
-    margin-top: 0;
-    padding-top: 0; 
-    position: relative;
-}
 @media only screen and (max-width:991px ){
-    nav{
-        #Software{
-            display: none;
-        }
+    #Software{
+        display: none;
     }
     #iconimg{
         display: none;
     }
     #content{
-        @extend %for_content;
+        background-color: rgba(240, 240, 240, 0.863);
+        border-radius: 15px;
+        margin-top: 0;
+        padding-top: 0;
+        position: relative;
         top: -8em;
     }
     #coverDiv{
         height:15em;
         background-size: cover;
-        filter:$for_filter;
+        filter: blur(5px);
     }
 }
 @media only screen and (min-width:992px){
@@ -34,14 +28,18 @@ $for_filter: blur(5px);
         display: none;
     }
     #content{
-        @extend %for_content;
+        margin-top: 0;
+        padding-top: 0;
         margin-left: 15%;
         margin-right: 15%;
+        background-color: rgba(240, 240, 240, 0.863);
+        border-radius: 15px;
+        position: relative;
         top:-12em;
     }
     #coverDiv{
         height:20em;
         background-size: cover;
-        filter: $for_filter;
+        filter: blur(5px);
     }
 }
